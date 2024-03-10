@@ -223,9 +223,9 @@ const calculateForcast = ({weatherData, weatherModelsResponse, power, lat, lon, 
 
         },{}))
         
-        const summary = summaryObject.length == 1 ? Object.values(summaryObject[0]) : summaryObject.map(s => Object.values(s))
+        const summary = summaryObject.map(s => Object.values(s))
         
-        return {values:calculations.length == 1 ? calculations[0]:calculations, summary}
+        return {values: summary}
     }
 
     return {values: calculations}
