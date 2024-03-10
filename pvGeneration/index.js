@@ -228,7 +228,7 @@ const calculateForcast = ({weatherData, weatherModelsResponse, power, lat, lon, 
         return {values:calculations.length == 1 ? calculations[0]:calculations, summary}
     }
 
-    return {values:calculations.length == 1 ? calculations[0]:calculations}
+    return {values: calculations}
 }
 
 const calcCellTemperature = (temperature, totalRadiotionOnCell) => {
